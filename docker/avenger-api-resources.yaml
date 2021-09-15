@@ -1,6 +1,6 @@
 version: '3.2'
 services:
-  postgres:
+  postgres-dio-avengers:
     image: postgres:12-alpine
     environment:
       POSTGRES_USER: ${DB_USER}
@@ -14,7 +14,7 @@ services:
     networks:
       - postgres-compose-network
 
-  teste-pgadmin-compose:
+  pgadmin-avenger:
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
@@ -22,7 +22,7 @@ services:
     ports:
       - "5556:80"
     depends_on:
-      - postgres
+      - postgres-dio-avengers
     networks:
       - postgres-compose-network
 
