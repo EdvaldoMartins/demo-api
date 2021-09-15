@@ -22,7 +22,7 @@ class AvengerResource(@Autowired private val repository: AvengerRepository) {
         AvengerResponse.from(avenger = it)
     }.let { ResponseEntity.ok().body(it) }
 
-    @GetMapping(value = ["{id}"])
+    @GetMapping(value = ["{id}/detail"])
     fun getAvengerDetails(@PathVariable(value = "id") id: Long) = repository.getDetail(id = id)?.let {
         ResponseEntity.ok().body(AvengerResponse.from(it))
     } ?: ResponseEntity.notFound().build<Void>()
