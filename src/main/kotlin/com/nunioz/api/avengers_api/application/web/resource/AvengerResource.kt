@@ -2,11 +2,8 @@ package com.nunioz.api.avengers_api.application.web.resource
 
 import com.nunioz.api.avengers_api.application.web.resource.request.AvengerRequest
 import com.nunioz.api.avengers_api.application.web.resource.response.AvengerResponse
-import com.nunioz.api.avengers_api.domain.avenger.Avenger
 import com.nunioz.api.avengers_api.domain.avenger.AvengerRepository
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.MediaType
-import org.springframework.http.RequestEntity
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
