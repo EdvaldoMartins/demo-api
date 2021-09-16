@@ -3,7 +3,7 @@ package com.nunioz.api.avengers_api.application.web.resource.response
 import com.nunioz.api.avengers_api.domain.avenger.Avenger
 
 data class AvengerResponse(
-        val id: Long?=null,
+        val id: Long?,
         val nick: String,
         val person: String,
         val description: String?,

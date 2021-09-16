@@ -24,7 +24,7 @@ data class AvengerRequest(
             history = history)
 
     companion object {
-        fun to(id: Long, request: AvengerRequest) = Avenger(
+        fun to(id: Long?, request: AvengerRequest) = Avenger(
                 id = id,
                 nick = request.nick,
                 person = request.person,
