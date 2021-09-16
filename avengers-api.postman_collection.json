@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "a3cf1118-ccc4-4af3-93c0-a0c09537b006",
+		"name": "avengers-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/avengers/v1/api/avenger",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"avengers",
+						"v1",
+						"api",
+						"avenger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/avengers/v1/api/avenger/3/detail",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"avengers",
+						"v1",
+						"api",
+						"avenger",
+						"3",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nick\": \"Iron-Man\",\n    \"person\": \"Tony Stark\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/avengers/v1/api/avenger",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"avengers",
+						"v1",
+						"api",
+						"avenger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nick\": \"Iron-Man\",\n    \"person\": \"Tony Stark\",\n    \"description\": \"Super poders: Rico pra caralho\",\n    \"history\": \"Era um genio e muito rico\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/avengers/v1/api/avenger/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"avengers",
+						"v1",
+						"api",
+						"avenger",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/avengers/v1/api/avenger/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"avengers",
+						"v1",
+						"api",
+						"avenger",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
